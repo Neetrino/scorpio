@@ -1,154 +1,36 @@
-# 🚀 Scorpio Creative Agency
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-> From Space to Digital Harmony
+## Getting Started
 
-Современный веб-сайт для креативного агентства Scorpio с космической тематикой, профессиональными анимациями и админ панелью для управления контентом.
+First, run the development server:
 
-## ✨ Особенности
-
-- 🎨 **Современный дизайн** - космическая тематика с неоновыми акцентами
-- ⚡ **Высокая производительность** - Next.js 14 с App Router
-- 🎬 **Плавные анимации** - Framer Motion + GSAP + Lenis
-- 📱 **Адаптивность** - идеально на всех устройствах
-- 🔧 **Админ панель** - Sanity Studio для управления контентом
-- 🚀 **SEO оптимизация** - для роста в поисковых системах
-
-## 🛠 Технологический стек
-
-### Frontend
-- **Next.js 14** - React фреймворк с App Router
-- **TypeScript** - типобезопасность
-- **Tailwind CSS** - стилизация
-- **shadcn/ui** - UI компоненты
-
-### Анимации
-- **Framer Motion** - микро-взаимодействия
-- **GSAP** - сложные scroll анимации
-- **Lenis** - плавный скролл
-
-### CMS & Админ панель
-- **Sanity Studio** - управление контентом
-- **NextAuth.js** - аутентификация
-- **Live Preview** - предпросмотр изменений
-
-### Развертывание
-- **Vercel** - хостинг и CDN
-- **GitHub** - версионный контроль
-
-## 📁 Структура проекта
-
-```
-scorpio/
-├── src/
-│   ├── app/                 # Next.js App Router
-│   │   ├── (main)/          # Основные страницы
-│   │   ├── studio/          # Sanity Studio
-│   │   └── api/             # API routes
-│   ├── components/          # React компоненты
-│   ├── lib/                 # Утилиты и конфигурация
-│   └── types/               # TypeScript типы
-├── sanity/                  # Sanity схема
-└── public/                  # Статические файлы
-```
-
-## 🚀 Быстрый старт
-
-### Предварительные требования
-- Node.js 18+
-- npm или yarn
-- Git
-
-### Установка
-
-1. **Клонируй репозиторий**
-```bash
-git clone https://github.com/Neetrino/scorpio.git
-cd scorpio
-```
-
-2. **Установи зависимости**
-```bash
-npm install
-```
-
-3. **Настрой переменные окружения**
-```bash
-cp .env.example .env.local
-# Отредактируй .env.local с твоими настройками
-```
-
-4. **Запусти проект**
 ```bash
 npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-5. **Открой в браузере**
-```
-http://localhost:3000
-```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## 📋 Доступные скрипты
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-- `npm run dev` - запуск в режиме разработки
-- `npm run build` - сборка для продакшена
-- `npm run start` - запуск продакшен версии
-- `npm run lint` - проверка кода
-- `npm run type-check` - проверка типов
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## 🎨 Дизайн-система
+## Learn More
 
-### Цветовая палитра
-- **Основной**: #0A0A0A (глубокий черный)
-- **Вторичный**: #1A1A1A (темно-серый)
-- **Акцент**: #00D4FF (неоновый голубой)
-- **Дополнительный**: #FF6B35 (оранжевый)
+To learn more about Next.js, take a look at the following resources:
 
-### Типографика
-- **Шрифт**: Inter (современный, читаемый)
-- **Заголовки**: 32px - 48px
-- **Текст**: 16px - 18px
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📱 Адаптивность
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- **Mobile**: 320px - 768px
-- **Tablet**: 768px - 1024px
-- **Desktop**: 1024px - 1440px
-- **Large Desktop**: 1440px+
+## Deploy on Vercel
 
-## 🔧 Админ панель
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Админ панель доступна по адресу `/studio` и включает:
-
-- Управление проектами
-- Редактирование услуг
-- Управление блогом
-- Настройки команды
-- Медиа библиотека
-
-## 📈 Производительность
-
-- **Lighthouse Score**: 90+
-- **First Contentful Paint**: < 1.5s
-- **Largest Contentful Paint**: < 2.5s
-- **Cumulative Layout Shift**: < 0.1
-
-## 🤝 Участие в разработке
-
-1. Форкни репозиторий
-2. Создай ветку для новой функции
-3. Сделай коммит изменений
-4. Отправь Pull Request
-
-## 📄 Лицензия
-
-Этот проект лицензирован под MIT License.
-
-## 📞 Контакты
-
-- **Email**: hello@scorpio.agency
-- **Website**: https://scorpio.agency
-- **GitHub**: https://github.com/Neetrino/scorpio
-
----
-
-**Создано с ❤️ для Scorpio Creative Agency**
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
