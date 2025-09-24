@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Behance } from 'lucide-react'
+import { Mail, Phone, MapPin, Linkedin, Twitter, Instagram, Palette } from 'lucide-react'
 
 export default function Footer() {
   const currentYear = new Date().getFullYear()
@@ -33,7 +33,7 @@ export default function Footer() {
     { name: 'LinkedIn', href: '#', icon: Linkedin },
     { name: 'Twitter', href: '#', icon: Twitter },
     { name: 'Instagram', href: '#', icon: Instagram },
-    { name: 'Behance', href: '#', icon: Behance },
+    { name: 'Portfolio', href: '#', icon: Palette },
   ]
 
   return (
