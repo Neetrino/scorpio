@@ -66,15 +66,34 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
 }
 
-/* Custom Scorpio styles */
+/* Custom Scorpio styles for light theme */
 .scorpio-gradient {
-  background: linear-gradient(135deg, #0A0A0A 0%, #1A1A1A 100%);
+  background: linear-gradient(135deg, #F8FAFC 0%, #E2E8F0 100%);
 }
 
 .scorpio-glow {
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.3);
+  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
 }
 
 .scorpio-text-glow {
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.5);
+  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+}
+
+/* Light theme specific styles */
+.scorpio-dark {
+  background-color: #F8FAFC;
+  color: #1E293B;
+}
+
+.scorpio-dark-light {
+  background-color: #FFFFFF;
+  border: 1px solid #E2E8F0;
+}
+
+.scorpio-primary {
+  color: #0F172A;
+}
+
+.scorpio-secondary {
+  color: #FF6B35;
 }

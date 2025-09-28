@@ -179,16 +179,16 @@ export default function Home() {
     <div className="min-h-screen scorpio-gradient">
       {/* Hero Section */}
       <section ref={heroRef} className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Animated Background Stars */}
+        {/* Animated Background Elements */}
         <div ref={starsRef} className="absolute inset-0">
-          <div className="absolute top-20 left-20 w-3 h-3 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/50"></div>
-          <div className="absolute top-40 right-32 w-2 h-2 bg-white rounded-full shadow-lg shadow-white/30"></div>
-          <div className="absolute bottom-40 left-1/4 w-2.5 h-2.5 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/50"></div>
-          <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/30"></div>
-          <div className="absolute top-60 left-1/3 w-1 h-1 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/40"></div>
-          <div className="absolute bottom-60 right-1/3 w-2 h-2 bg-white rounded-full shadow-lg shadow-white/20"></div>
-          <div className="absolute top-1/2 left-10 w-1.5 h-1.5 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/30"></div>
-          <div className="absolute bottom-1/3 right-10 w-1 h-1 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/50"></div>
+          <div className="absolute top-20 left-20 w-3 h-3 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/30"></div>
+          <div className="absolute top-40 right-32 w-2 h-2 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/40"></div>
+          <div className="absolute bottom-40 left-1/4 w-2.5 h-2.5 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/30"></div>
+          <div className="absolute top-1/3 right-1/4 w-1.5 h-1.5 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/20"></div>
+          <div className="absolute top-60 left-1/3 w-1 h-1 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/25"></div>
+          <div className="absolute bottom-60 right-1/3 w-2 h-2 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/35"></div>
+          <div className="absolute top-1/2 left-10 w-1.5 h-1.5 bg-scorpio-secondary rounded-full shadow-lg shadow-scorpio-secondary/25"></div>
+          <div className="absolute bottom-1/3 right-10 w-1 h-1 bg-scorpio-primary rounded-full shadow-lg shadow-scorpio-primary/30"></div>
         </div>
 
         {/* Animated Hero Content */}
@@ -196,10 +196,10 @@ export default function Home() {
           <div className="mb-8">
             <motion.h1 
               ref={titleRef}
-              className="text-6xl md:text-8xl font-bold text-white mb-6 scorpio-text-glow"
+              className="text-6xl md:text-8xl font-bold text-scorpio-primary mb-6 scorpio-text-glow"
               whileHover={{ 
                 scale: 1.05,
-                textShadow: "0 0 30px #00D4FF, 0 0 60px #00D4FF, 0 0 90px #00D4FF"
+                textShadow: "0 0 20px #0F172A, 0 0 40px #0F172A, 0 0 60px #0F172A"
               }}
               transition={{ duration: 0.3 }}
             >
@@ -207,14 +207,14 @@ export default function Home() {
             </motion.h1>
             <motion.div 
               ref={subtitleRef}
-              className="text-2xl md:text-4xl text-scorpio-primary font-light mb-4"
+              className="text-2xl md:text-4xl text-scorpio-secondary font-light mb-4"
               whileHover={{ scale: 1.02 }}
               transition={{ duration: 0.2 }}
             >
               From Space to Digital Harmony
             </motion.div>
             <motion.div 
-              className="text-lg md:text-xl text-gray-300 max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
@@ -229,10 +229,10 @@ export default function Home() {
             className="flex flex-col sm:flex-row gap-4 justify-center items-center"
           >
             <motion.button 
-              className="px-8 py-4 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow relative overflow-hidden group"
+              className="px-8 py-4 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow relative overflow-hidden group"
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: "0 0 30px rgba(0, 212, 255, 0.5)"
+                boxShadow: "0 0 20px rgba(15, 23, 42, 0.3)"
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -240,10 +240,10 @@ export default function Home() {
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
             </motion.button>
             <motion.button 
-              className="px-8 py-4 border-2 border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-scorpio-dark transition-all duration-300 relative overflow-hidden group"
+              className="px-8 py-4 border-2 border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-white transition-all duration-300 relative overflow-hidden group"
               whileHover={{ 
                 scale: 1.05,
-                boxShadow: "0 0 20px rgba(0, 212, 255, 0.3)"
+                boxShadow: "0 0 15px rgba(15, 23, 42, 0.2)"
               }}
               whileTap={{ scale: 0.95 }}
             >
@@ -280,9 +280,9 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <motion.h2 
-              className="text-4xl md:text-5xl font-bold text-white mb-6"
+              className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6"
               whileInView={{ 
-                background: "linear-gradient(45deg, #00D4FF, #FF6B35, #00D4FF)",
+                background: "linear-gradient(45deg, #0F172A, #FF6B35, #0F172A)",
                 backgroundClip: "text",
                 WebkitBackgroundClip: "text",
                 WebkitTextFillColor: "transparent"
@@ -293,7 +293,7 @@ export default function Home() {
               Our Mission
             </motion.h2>
             <motion.p 
-              className="text-xl text-gray-300 max-w-3xl mx-auto"
+              className="text-xl text-gray-600 max-w-3xl mx-auto"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -307,11 +307,11 @@ export default function Home() {
           {/* Animated Values Grid */}
           <div ref={cardsRef} className="grid md:grid-cols-3 gap-8">
             <motion.div 
-              className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden"
+              className="text-center p-6 bg-white rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden shadow-lg hover:shadow-xl"
               whileHover={{ 
                 y: -10,
                 scale: 1.02,
-                boxShadow: "0 20px 40px rgba(0, 212, 255, 0.1)"
+                boxShadow: "0 20px 40px rgba(15, 23, 42, 0.1)"
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -321,26 +321,26 @@ export default function Home() {
                 whileHover={{ 
                   scale: 1.2,
                   rotate: 360,
-                  filter: "drop-shadow(0 0 10px #00D4FF)"
+                  filter: "drop-shadow(0 0 10px #0F172A)"
                 }}
                 transition={{ duration: 0.5 }}
               >
                 🚀
               </motion.div>
-              <h3 className="text-xl font-semibold text-white mb-2 relative z-10 group-hover:text-scorpio-primary transition-colors">
+              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Innovation
               </h3>
-              <p className="text-gray-400 relative z-10">
+              <p className="text-gray-600 relative z-10">
                 We push boundaries and explore new frontiers in digital design
               </p>
             </motion.div>
 
             <motion.div 
-              className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden"
+              className="text-center p-6 bg-white rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden shadow-lg hover:shadow-xl"
               whileHover={{ 
                 y: -10,
                 scale: 1.02,
-                boxShadow: "0 20px 40px rgba(0, 212, 255, 0.1)"
+                boxShadow: "0 20px 40px rgba(15, 23, 42, 0.1)"
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -356,20 +356,20 @@ export default function Home() {
               >
                 ✨
               </motion.div>
-              <h3 className="text-xl font-semibold text-white mb-2 relative z-10 group-hover:text-scorpio-primary transition-colors">
+              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Creativity
               </h3>
-              <p className="text-gray-400 relative z-10">
+              <p className="text-gray-600 relative z-10">
                 Every project is a unique journey through the creative cosmos
               </p>
             </motion.div>
 
             <motion.div 
-              className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden"
+              className="text-center p-6 bg-white rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden shadow-lg hover:shadow-xl"
               whileHover={{ 
                 y: -10,
                 scale: 1.02,
-                boxShadow: "0 20px 40px rgba(0, 212, 255, 0.1)"
+                boxShadow: "0 20px 40px rgba(15, 23, 42, 0.1)"
               }}
               whileTap={{ scale: 0.98 }}
             >
@@ -379,16 +379,16 @@ export default function Home() {
                 whileHover={{ 
                   scale: 1.2,
                   rotate: 360,
-                  filter: "drop-shadow(0 0 10px #00D4FF)"
+                  filter: "drop-shadow(0 0 10px #0F172A)"
                 }}
                 transition={{ duration: 0.5 }}
               >
                 🌌
               </motion.div>
-              <h3 className="text-xl font-semibold text-white mb-2 relative z-10 group-hover:text-scorpio-primary transition-colors">
+              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Harmony
               </h3>
-              <p className="text-gray-400 relative z-10">
+              <p className="text-gray-600 relative z-10">
                 We create perfect balance between form, function, and experience
               </p>
             </motion.div>

@@ -50,12 +50,12 @@ const config: Config = {
           "4": "hsl(var(--chart-4))",
           "5": "hsl(var(--chart-5))",
         },
-        // Scorpio custom colors
+        // Scorpio custom colors for light theme
         scorpio: {
-          primary: "#00D4FF",
+          primary: "#0F172A",
           secondary: "#FF6B35",
-          dark: "#0A0A0A",
-          "dark-light": "#1A1A1A",
+          dark: "#F8FAFC",
+          "dark-light": "#FFFFFF",
         },
       },
       borderRadius: {
