@@ -95,10 +95,10 @@ export default function ContactPage() {
       <section className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={heroRef} className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 scorpio-text-glow">
+            <h1 className="text-5xl md:text-7xl font-bold text-primary-dark mb-6 scorpio-text-glow">
               Let's Launch Your Brand
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Ready to create something extraordinary? Let's discuss your project and bring your vision to life.
             </p>
           </div>
@@ -109,8 +109,8 @@ export default function ContactPage() {
         <div className="grid lg:grid-cols-2 gap-12">
           {/* Contact Form */}
           <div ref={formRef}>
-            <div className="bg-scorpio-dark-light rounded-lg border border-gray-800 p-8">
-              <h2 className="text-3xl font-bold text-white mb-6">Get in Touch</h2>
+            <div className="bg-white rounded-lg border border-gray-200 p-8 shadow-lg">
+              <h2 className="text-3xl font-bold text-primary-dark mb-6">Get in Touch</h2>
               
               {submitStatus === 'success' && (
                 <div className="mb-6 p-4 bg-green-900/20 border border-green-500 text-green-400 rounded-lg">
@@ -138,7 +138,7 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block text-white font-medium mb-2">
+                    <label htmlFor="name" className="block text-primary-dark font-medium mb-2">
                       Name *
                     </label>
                     <input
@@ -148,13 +148,13 @@ export default function ContactPage() {
                       value={formData.name}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-scorpio-primary transition-colors"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark placeholder-gray-500 focus:outline-none focus:border-primary-dark transition-colors"
                       placeholder="Your full name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="email" className="block text-white font-medium mb-2">
+                    <label htmlFor="email" className="block text-primary-dark font-medium mb-2">
                       Email *
                     </label>
                     <input
@@ -164,7 +164,7 @@ export default function ContactPage() {
                       value={formData.email}
                       onChange={handleInputChange}
                       required
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-scorpio-primary transition-colors"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark placeholder-gray-500 focus:outline-none focus:border-primary-dark transition-colors"
                       placeholder="your@email.com"
                     />
                   </div>
@@ -172,7 +172,7 @@ export default function ContactPage() {
 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="company" className="block text-white font-medium mb-2">
+                    <label htmlFor="company" className="block text-primary-dark font-medium mb-2">
                       Company
                     </label>
                     <input
@@ -181,13 +181,13 @@ export default function ContactPage() {
                       name="company"
                       value={formData.company}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-scorpio-primary transition-colors"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark placeholder-gray-500 focus:outline-none focus:border-primary-dark transition-colors"
                       placeholder="Your company name"
                     />
                   </div>
                   
                   <div>
-                    <label htmlFor="budget" className="block text-white font-medium mb-2">
+                    <label htmlFor="budget" className="block text-primary-dark font-medium mb-2">
                       Budget Range
                     </label>
                     <select
@@ -195,7 +195,7 @@ export default function ContactPage() {
                       name="budget"
                       value={formData.budget}
                       onChange={handleInputChange}
-                      className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white focus:outline-none focus:border-scorpio-primary transition-colors"
+                      className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark focus:outline-none focus:border-primary-dark transition-colors"
                     >
                       <option value="">Select budget range</option>
                       {budgetRanges.map((range) => (
@@ -206,7 +206,7 @@ export default function ContactPage() {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block text-white font-medium mb-2">
+                  <label htmlFor="message" className="block text-primary-dark font-medium mb-2">
                     Message *
                   </label>
                   <textarea
@@ -216,7 +216,7 @@ export default function ContactPage() {
                     onChange={handleInputChange}
                     required
                     rows={6}
-                    className="w-full px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-scorpio-primary transition-colors resize-none"
+                    className="w-full px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark placeholder-gray-500 focus:outline-none focus:border-primary-dark transition-colors resize-none"
                     placeholder="Tell us about your project, goals, and how we can help..."
                   />
                 </div>
@@ -224,11 +224,11 @@ export default function ContactPage() {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full px-8 py-4 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
+                  className="w-full px-8 py-4 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center space-x-2"
                 >
                   {isSubmitting ? (
                     <>
-                      <div className="w-5 h-5 border-2 border-scorpio-dark border-t-transparent rounded-full animate-spin"></div>
+                      <div className="w-5 h-5 border-2 border-white border-t-transparent rounded-full animate-spin"></div>
                       <span>Sending...</span>
                     </>
                   ) : (
@@ -245,8 +245,8 @@ export default function ContactPage() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div>
-              <h2 className="text-3xl font-bold text-white mb-6">Contact Information</h2>
-              <p className="text-gray-300 mb-8">
+              <h2 className="text-3xl font-bold text-primary-dark mb-6">Contact Information</h2>
+              <p className="text-secondary-dark mb-8">
                 We're here to help you launch your brand into the digital universe. 
                 Get in touch with us through any of the channels below.
               </p>
@@ -257,25 +257,25 @@ export default function ContactPage() {
                 const Icon = info.icon
                 return (
                   <div key={index} className="flex items-start space-x-4">
-                    <div className="w-12 h-12 bg-scorpio-primary/20 rounded-lg flex items-center justify-center flex-shrink-0">
-                      <Icon className="w-6 h-6 text-scorpio-primary" />
+                    <div className="w-12 h-12 bg-primary-dark/10 rounded-lg flex items-center justify-center flex-shrink-0">
+                      <Icon className="w-6 h-6 text-primary-dark" />
                     </div>
                     <div>
-                      <h3 className="text-xl font-semibold text-white mb-1">{info.title}</h3>
-                      <p className="text-scorpio-primary font-medium mb-1">{info.details}</p>
-                      <p className="text-gray-400 text-sm">{info.description}</p>
+                      <h3 className="text-xl font-semibold text-primary-dark mb-1">{info.title}</h3>
+                      <p className="text-scorpio-secondary font-medium mb-1">{info.details}</p>
+                      <p className="text-secondary-dark text-sm">{info.description}</p>
                     </div>
                   </div>
                 )
               })}
             </div>
 
-            <div className="bg-scorpio-dark-light rounded-lg border border-gray-800 p-6">
-              <h3 className="text-xl font-semibold text-white mb-4">Response Time</h3>
-              <p className="text-gray-300 mb-4">
+            <div className="bg-white rounded-lg border border-gray-200 p-6 shadow-lg">
+              <h3 className="text-xl font-semibold text-primary-dark mb-4">Response Time</h3>
+              <p className="text-secondary-dark mb-4">
                 We typically respond to all inquiries within 24 hours during business days.
               </p>
-              <div className="space-y-2 text-sm text-gray-400">
+              <div className="space-y-2 text-sm text-muted-dark">
                 <p>• Business Hours: Monday - Friday, 9 AM - 6 PM PST</p>
                 <p>• Emergency projects: Available 24/7</p>
                 <p>• Free consultation: 30 minutes</p>

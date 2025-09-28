@@ -91,10 +91,10 @@ export default function AboutPage() {
       <section className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={heroRef} className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 scorpio-text-glow">
+            <h1 className="text-5xl md:text-7xl font-bold text-primary-dark mb-6 scorpio-text-glow">
               About Scorpio
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               What started as a small team with big ambition has grown into a creative agency 
               with a mission to ensure every business reaches its full digital potential.
             </p>
@@ -106,10 +106,10 @@ export default function AboutPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Our Mission
             </h2>
-            <div className="space-y-6 text-lg text-gray-300 max-w-4xl mx-auto">
+            <div className="space-y-6 text-lg text-secondary-dark max-w-4xl mx-auto">
               <p>
                 "Scorpio arose from a desire to bring people, projects, and clients into perfect harmony."
               </p>
@@ -119,7 +119,7 @@ export default function AboutPage() {
               <p>
                 "Our customers regard us as an extension of their team. We regard them as family."
               </p>
-              <p className="text-scorpio-primary font-semibold">
+              <p className="text-scorpio-secondary font-semibold">
                 "We're coming from Space to make your digital Space an aesthetic place to connect and communicate."
               </p>
             </div>
@@ -131,10 +131,10 @@ export default function AboutPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={timelineRef} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Our Journey
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               From a small team to a full-service creative agency
             </p>
           </div>
@@ -147,15 +147,15 @@ export default function AboutPage() {
               {timeline.map((item, index) => (
                 <div key={index} className={`flex items-center ${index % 2 === 0 ? 'flex-row' : 'flex-row-reverse'}`}>
                   <div className={`w-1/2 ${index % 2 === 0 ? 'pr-8 text-right' : 'pl-8 text-left'}`}>
-                    <div className="bg-scorpio-dark-light p-6 rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300">
-                      <div className="text-scorpio-primary font-bold text-lg mb-2">{item.year}</div>
-                      <h3 className="text-white text-xl font-semibold mb-2">{item.title}</h3>
-                      <p className="text-gray-400">{item.description}</p>
+                    <div className="bg-white p-6 rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 shadow-lg">
+                      <div className="text-scorpio-secondary font-bold text-lg mb-2">{item.year}</div>
+                      <h3 className="text-primary-dark text-xl font-semibold mb-2">{item.title}</h3>
+                      <p className="text-secondary-dark">{item.description}</p>
                     </div>
                   </div>
                   
                   {/* Timeline Dot */}
-                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-scorpio-primary rounded-full border-4 border-scorpio-dark"></div>
+                  <div className="absolute left-1/2 transform -translate-x-1/2 w-4 h-4 bg-scorpio-primary rounded-full border-4 border-white"></div>
                   
                   <div className="w-1/2"></div>
                 </div>
@@ -169,20 +169,20 @@ export default function AboutPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={valuesRef} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Our Values
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               The principles that guide everything we do
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
-              <div key={index} className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300">
+              <div key={index} className="text-center p-6 bg-white rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 shadow-lg">
                 <div className="text-4xl mb-4">{value.icon}</div>
-                <h3 className="text-xl font-semibold text-white mb-3">{value.title}</h3>
-                <p className="text-gray-400">{value.description}</p>
+                <h3 className="text-xl font-semibold text-primary-dark mb-3">{value.title}</h3>
+                <p className="text-secondary-dark">{value.description}</p>
               </div>
             ))}
           </div>
@@ -193,10 +193,10 @@ export default function AboutPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Meet Our Team
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               The creative minds behind our success
             </p>
           </div>
@@ -204,12 +204,12 @@ export default function AboutPage() {
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {team.map((member, index) => (
               <div key={index} className="text-center group">
-                <div className="w-32 h-32 mx-auto mb-4 bg-gray-700 rounded-full flex items-center justify-center text-4xl text-gray-400 group-hover:text-scorpio-primary transition-colors duration-300">
+                <div className="w-32 h-32 mx-auto mb-4 bg-gray-100 rounded-full flex items-center justify-center text-4xl text-gray-600 group-hover:text-scorpio-primary transition-colors duration-300">
                   {member.name.split(' ').map(n => n[0]).join('')}
                 </div>
-                <h3 className="text-xl font-semibold text-white mb-2">{member.name}</h3>
-                <p className="text-scorpio-primary font-medium mb-2">{member.role}</p>
-                <p className="text-gray-400 text-sm">{member.bio}</p>
+                <h3 className="text-xl font-semibold text-primary-dark mb-2">{member.name}</h3>
+                <p className="text-scorpio-secondary font-medium mb-2">{member.role}</p>
+                <p className="text-secondary-dark text-sm">{member.bio}</p>
               </div>
             ))}
           </div>
@@ -219,17 +219,17 @@ export default function AboutPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
             Ready to Work Together?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-secondary-dark mb-8">
             Let's create something extraordinary together
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="px-8 py-4 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow">
+            <button className="px-8 py-4 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow">
               Get Started
             </button>
-            <button className="px-8 py-4 border-2 border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-scorpio-dark transition-all duration-300">
+            <button className="px-8 py-4 border-2 border-primary-dark text-primary-dark font-semibold rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300">
               View Our Work
             </button>
           </div>

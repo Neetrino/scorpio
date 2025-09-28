@@ -120,10 +120,10 @@ export default function ProjectsPage() {
       <section className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={heroRef} className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 scorpio-text-glow">
+            <h1 className="text-5xl md:text-7xl font-bold text-primary-dark mb-6 scorpio-text-glow">
               Our Projects
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Discover our portfolio of successful digital experiences that have launched brands into the digital universe
             </p>
           </div>
@@ -140,8 +140,8 @@ export default function ProjectsPage() {
                 onClick={() => setActiveFilter(filter.id)}
                 className={`px-6 py-3 rounded-lg font-medium transition-all duration-300 ${
                   activeFilter === filter.id
-                    ? 'bg-scorpio-primary text-scorpio-dark scorpio-glow'
-                    : 'bg-scorpio-dark-light text-gray-300 hover:text-scorpio-primary hover:border-scorpio-primary border border-gray-800'
+                    ? 'bg-primary-dark text-white scorpio-glow'
+                    : 'bg-white text-secondary-dark hover:text-primary-dark hover:border-primary-dark border border-gray-200'
                 }`}
               >
                 {filter.label}
@@ -156,31 +156,31 @@ export default function ProjectsPage() {
         <div className="max-w-7xl mx-auto">
           <div ref={projectsRef} className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {filteredProjects.map((project) => (
-              <div key={project.id} className="bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300 overflow-hidden group">
+              <div key={project.id} className="bg-white rounded-lg border border-gray-200 hover:border-primary-dark transition-all duration-300 overflow-hidden group shadow-lg">
                 {/* Project Image Placeholder */}
-                <div className="h-48 bg-gray-700 flex items-center justify-center text-4xl text-gray-400 group-hover:text-scorpio-primary transition-colors">
+                <div className="h-48 bg-gray-100 flex items-center justify-center text-4xl text-gray-600 group-hover:text-primary-dark transition-colors">
                   {project.title.charAt(0)}
                 </div>
                 
                 <div className="p-6">
                   <div className="flex justify-between items-start mb-4">
                     <div>
-                      <h3 className="text-xl font-bold text-white mb-2 group-hover:text-scorpio-primary transition-colors">
+                      <h3 className="text-xl font-bold text-primary-dark mb-2 group-hover:text-scorpio-secondary transition-colors">
                         {project.title}
                       </h3>
-                      <p className="text-gray-400 text-sm">{project.client} • {project.industry} • {project.year}</p>
+                      <p className="text-secondary-dark text-sm">{project.client} • {project.industry} • {project.year}</p>
                     </div>
                     <div className="text-right">
-                      <div className="text-2xl font-bold text-scorpio-primary">{project.results.metric}</div>
-                      <div className="text-xs text-gray-400">{project.results.label}</div>
+                      <div className="text-2xl font-bold text-scorpio-secondary">{project.results.metric}</div>
+                      <div className="text-xs text-muted-dark">{project.results.label}</div>
                     </div>
                   </div>
                   
-                  <p className="text-gray-300 mb-4 text-sm">{project.description}</p>
+                  <p className="text-secondary-dark mb-4 text-sm">{project.description}</p>
                   
                   <div className="flex flex-wrap gap-2 mb-4">
                     {project.tags.map((tag, index) => (
-                      <span key={index} className="px-2 py-1 bg-gray-800 text-gray-300 text-xs rounded">
+                      <span key={index} className="px-2 py-1 bg-gray-100 text-secondary-dark text-xs rounded">
                         {tag}
                       </span>
                     ))}
@@ -188,7 +188,7 @@ export default function ProjectsPage() {
                   
                   <Link
                     href={`/projects/${project.id}`}
-                    className="block w-full text-center px-4 py-2 border border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-scorpio-dark transition-all duration-300"
+                    className="block w-full text-center px-4 py-2 border border-primary-dark text-primary-dark font-semibold rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
                   >
                     View Case Study
                   </Link>
@@ -203,21 +203,21 @@ export default function ProjectsPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 text-center">
-            <div className="bg-scorpio-dark-light p-8 rounded-lg border border-gray-800">
-              <div className="text-4xl font-bold text-scorpio-primary mb-2">100+</div>
-              <div className="text-gray-300">Projects Completed</div>
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+              <div className="text-4xl font-bold text-primary-dark mb-2">100+</div>
+              <div className="text-secondary-dark">Projects Completed</div>
             </div>
-            <div className="bg-scorpio-dark-light p-8 rounded-lg border border-gray-800">
-              <div className="text-4xl font-bold text-scorpio-primary mb-2">50+</div>
-              <div className="text-gray-300">Happy Clients</div>
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+              <div className="text-4xl font-bold text-primary-dark mb-2">50+</div>
+              <div className="text-secondary-dark">Happy Clients</div>
             </div>
-            <div className="bg-scorpio-dark-light p-8 rounded-lg border border-gray-800">
-              <div className="text-4xl font-bold text-scorpio-primary mb-2">5</div>
-              <div className="text-gray-300">Years Experience</div>
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+              <div className="text-4xl font-bold text-primary-dark mb-2">5</div>
+              <div className="text-secondary-dark">Years Experience</div>
             </div>
-            <div className="bg-scorpio-dark-light p-8 rounded-lg border border-gray-800">
-              <div className="text-4xl font-bold text-scorpio-primary mb-2">98%</div>
-              <div className="text-gray-300">Client Satisfaction</div>
+            <div className="bg-white p-8 rounded-lg border border-gray-200 shadow-lg">
+              <div className="text-4xl font-bold text-primary-dark mb-2">98%</div>
+              <div className="text-secondary-dark">Client Satisfaction</div>
             </div>
           </div>
         </div>
@@ -226,22 +226,22 @@ export default function ProjectsPage() {
       {/* CTA Section */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-secondary-dark mb-8">
             Let's create something extraordinary together
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
               href="/contact"
-              className="px-8 py-4 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow"
+              className="px-8 py-4 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow"
             >
               Start Your Project
             </Link>
             <Link
               href="/services"
-              className="px-8 py-4 border-2 border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-scorpio-dark transition-all duration-300"
+              className="px-8 py-4 border-2 border-primary-dark text-primary-dark font-semibold rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300"
             >
               View Our Services
             </Link>

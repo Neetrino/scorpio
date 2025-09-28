@@ -74,10 +74,10 @@ export default function AcademyPage() {
       <section className="relative py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div ref={heroRef} className="text-center mb-16">
-            <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 scorpio-text-glow">
+            <h1 className="text-5xl md:text-7xl font-bold text-primary-dark mb-6 scorpio-text-glow">
               Academy & Events
             </h1>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Learn from industry experts and connect with like-minded professionals in our exclusive workshops and events
             </p>
           </div>
@@ -88,54 +88,54 @@ export default function AcademyPage() {
       <section className="py-20 px-4">
         <div className="max-w-7xl mx-auto">
           <div ref={eventsRef} className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Upcoming Events
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Join our expert-led workshops and masterclasses
             </p>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
             {events.map((event) => (
-              <div key={event.id} className="bg-scorpio-dark-light rounded-lg border border-gray-800 hover:border-scorpio-primary transition-all duration-300 p-8">
+              <div key={event.id} className="bg-white rounded-lg border border-gray-200 hover:border-primary-dark transition-all duration-300 p-8 shadow-lg">
                 <div className="flex justify-between items-start mb-4">
                   <div>
-                    <h3 className="text-2xl font-bold text-white mb-2">{event.title}</h3>
-                    <p className="text-scorpio-primary font-medium">{event.speaker}</p>
+                    <h3 className="text-2xl font-bold text-primary-dark mb-2">{event.title}</h3>
+                    <p className="text-scorpio-secondary font-medium">{event.speaker}</p>
                   </div>
                   <div className="text-right">
-                    <div className="text-2xl font-bold text-scorpio-primary">{event.price}</div>
-                    <div className="text-sm text-gray-400">{event.available} spots left</div>
+                    <div className="text-2xl font-bold text-scorpio-secondary">{event.price}</div>
+                    <div className="text-sm text-muted-dark">{event.available} spots left</div>
                   </div>
                 </div>
 
-                <p className="text-gray-300 mb-6">{event.description}</p>
+                <p className="text-secondary-dark mb-6">{event.description}</p>
 
                 <div className="space-y-3 mb-6">
-                  <div className="flex items-center space-x-3 text-gray-400">
+                  <div className="flex items-center space-x-3 text-muted-dark">
                     <Calendar className="w-5 h-5" />
                     <span>{formatDate(event.date)}</span>
                   </div>
-                  <div className="flex items-center space-x-3 text-gray-400">
+                  <div className="flex items-center space-x-3 text-muted-dark">
                     <Clock className="w-5 h-5" />
                     <span>{event.time}</span>
                   </div>
-                  <div className="flex items-center space-x-3 text-gray-400">
+                  <div className="flex items-center space-x-3 text-muted-dark">
                     <MapPin className="w-5 h-5" />
                     <span>{event.location}</span>
                   </div>
-                  <div className="flex items-center space-x-3 text-gray-400">
+                  <div className="flex items-center space-x-3 text-muted-dark">
                     <Users className="w-5 h-5" />
                     <span>{event.spots} participants max</span>
                   </div>
                 </div>
 
                 <div className="flex space-x-4">
-                  <button className="flex-1 px-6 py-3 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300">
+                  <button className="flex-1 px-6 py-3 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300">
                     Register Now
                   </button>
-                  <button className="px-6 py-3 border border-scorpio-primary text-scorpio-primary font-semibold rounded-lg hover:bg-scorpio-primary hover:text-scorpio-dark transition-all duration-300">
+                  <button className="px-6 py-3 border border-primary-dark text-primary-dark font-semibold rounded-lg hover:bg-primary-dark hover:text-white transition-all duration-300">
                     Learn More
                   </button>
                 </div>
@@ -149,29 +149,29 @@ export default function AcademyPage() {
       <section className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-8">
               Why Join Our Academy?
             </h2>
-            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Learn from industry leaders and advance your career
             </p>
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800">
+            <div className="text-center p-6 bg-white rounded-lg border border-gray-200 shadow-lg">
               <div className="text-4xl mb-4">🎓</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Expert Instructors</h3>
-              <p className="text-gray-400">Learn from industry professionals with years of real-world experience</p>
+              <h3 className="text-xl font-semibold text-primary-dark mb-3">Expert Instructors</h3>
+              <p className="text-secondary-dark">Learn from industry professionals with years of real-world experience</p>
             </div>
-            <div className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800">
+            <div className="text-center p-6 bg-white rounded-lg border border-gray-200 shadow-lg">
               <div className="text-4xl mb-4">🤝</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Hands-on Learning</h3>
-              <p className="text-gray-400">Practical workshops and real projects to apply your new skills</p>
+              <h3 className="text-xl font-semibold text-primary-dark mb-3">Hands-on Learning</h3>
+              <p className="text-secondary-dark">Practical workshops and real projects to apply your new skills</p>
             </div>
-            <div className="text-center p-6 bg-scorpio-dark-light rounded-lg border border-gray-800">
+            <div className="text-center p-6 bg-white rounded-lg border border-gray-200 shadow-lg">
               <div className="text-4xl mb-4">🌐</div>
-              <h3 className="text-xl font-semibold text-white mb-3">Networking</h3>
-              <p className="text-gray-400">Connect with like-minded professionals and expand your network</p>
+              <h3 className="text-xl font-semibold text-primary-dark mb-3">Networking</h3>
+              <p className="text-secondary-dark">Connect with like-minded professionals and expand your network</p>
             </div>
           </div>
         </div>
@@ -180,19 +180,19 @@ export default function AcademyPage() {
       {/* Newsletter Signup */}
       <section className="py-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
             Stay Updated
           </h2>
-          <p className="text-xl text-gray-300 mb-8">
+          <p className="text-xl text-secondary-dark mb-8">
             Get notified about new workshops, events, and exclusive content
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
             <input
               type="email"
               placeholder="Enter your email"
-              className="flex-1 px-4 py-3 bg-gray-800 border border-gray-700 rounded-lg text-white placeholder-gray-400 focus:outline-none focus:border-scorpio-primary"
+              className="flex-1 px-4 py-3 bg-white border border-gray-300 rounded-lg text-primary-dark placeholder-gray-500 focus:outline-none focus:border-primary-dark"
             />
-            <button className="px-6 py-3 bg-scorpio-primary text-scorpio-dark font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300">
+            <button className="px-6 py-3 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300">
               Subscribe
             </button>
           </div>
