@@ -395,6 +395,231 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Services Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+              Our Services
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              We offer comprehensive digital solutions to help your business thrive in the digital universe
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                icon: "🎨",
+                title: "Branding & Design",
+                description: "Create memorable brand identities that resonate with your audience and stand out in the digital space."
+              },
+              {
+                icon: "💻",
+                title: "Web Development",
+                description: "Build fast, responsive, and scalable websites that deliver exceptional user experiences across all devices."
+              },
+              {
+                icon: "📱",
+                title: "Mobile Apps",
+                description: "Develop native and cross-platform mobile applications that engage users and drive business growth."
+              },
+              {
+                icon: "📈",
+                title: "Digital Marketing",
+                description: "Drive traffic, increase conversions, and build brand awareness through strategic digital marketing campaigns."
+              },
+              {
+                icon: "🎬",
+                title: "Content Creation",
+                description: "Produce high-quality video, photography, and written content that tells your brand's story effectively."
+              },
+              {
+                icon: "🔧",
+                title: "Consulting",
+                description: "Get expert advice on digital strategy, technology choices, and business growth opportunities."
+              }
+            ].map((service, index) => (
+              <motion.div
+                key={service.title}
+                className="p-6 bg-white rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300 group relative overflow-hidden shadow-lg hover:shadow-xl"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <div className="absolute inset-0 bg-gradient-to-br from-scorpio-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                <div className="text-4xl mb-4 relative z-10">{service.icon}</div>
+                <h3 className="text-xl font-semibold text-scorpio-primary mb-3 relative z-10 group-hover:text-scorpio-secondary transition-colors">
+                  {service.title}
+                </h3>
+                <p className="text-gray-600 relative z-10">
+                  {service.description}
+                </p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Stats Section */}
+      <section className="py-20 px-4 bg-gray-50">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+              Our Impact
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Numbers that speak to our commitment to excellence and client success
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            {[
+              { number: "150+", label: "Projects Completed" },
+              { number: "98%", label: "Client Satisfaction" },
+              { number: "50+", label: "Happy Clients" },
+              { number: "5+", label: "Years Experience" }
+            ].map((stat, index) => (
+              <motion.div
+                key={stat.label}
+                className="text-center"
+                initial={{ opacity: 0, scale: 0.5 }}
+                whileInView={{ opacity: 1, scale: 1 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+              >
+                <div className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-2">
+                  {stat.number}
+                </div>
+                <div className="text-gray-600 font-medium">
+                  {stat.label}
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Testimonials Section */}
+      <section className="py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <motion.div 
+            className="text-center mb-16"
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+              What Our Clients Say
+            </h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+              Don't just take our word for it - hear from the businesses we've helped transform
+            </p>
+          </motion.div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                name: "Sarah Johnson",
+                company: "TechStart Inc.",
+                content: "Scorpio transformed our digital presence completely. Their attention to detail and creative approach exceeded our expectations.",
+                rating: 5
+              },
+              {
+                name: "Michael Chen",
+                company: "E-commerce Plus",
+                content: "The team's expertise in web development and digital marketing helped us increase our online sales by 300%.",
+                rating: 5
+              },
+              {
+                name: "Emily Rodriguez",
+                company: "Creative Studio",
+                content: "Working with Scorpio was a game-changer. They understood our vision and brought it to life beautifully.",
+                rating: 5
+              }
+            ].map((testimonial, index) => (
+              <motion.div
+                key={testimonial.name}
+                className="p-6 bg-gray-50 rounded-lg border border-gray-200 hover:border-scorpio-primary transition-all duration-300"
+                initial={{ opacity: 0, y: 50 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                viewport={{ once: true }}
+                whileHover={{ y: -5 }}
+              >
+                <div className="flex mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <span key={i} className="text-scorpio-secondary text-xl">⭐</span>
+                  ))}
+                </div>
+                <p className="text-gray-600 mb-4 italic">
+                  "{testimonial.content}"
+                </p>
+                <div>
+                  <div className="font-semibold text-scorpio-primary">
+                    {testimonial.name}
+                  </div>
+                  <div className="text-sm text-gray-500">
+                    {testimonial.company}
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 px-4 bg-scorpio-primary">
+        <div className="max-w-4xl mx-auto text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              Ready to Launch Your Project?
+            </h2>
+            <p className="text-xl text-gray-200 mb-8 max-w-2xl mx-auto">
+              Let's work together to create something extraordinary that will take your business to new heights.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <motion.button
+                className="px-8 py-4 bg-white text-scorpio-primary font-semibold rounded-lg hover:bg-gray-100 transition-all duration-300 relative overflow-hidden group"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <span className="relative z-10">Start Your Project</span>
+                <div className="absolute inset-0 bg-gradient-to-r from-transparent via-scorpio-primary/10 to-transparent -translate-x-full group-hover:translate-x-full transition-transform duration-700"></div>
+              </motion.button>
+              <motion.button
+                className="px-8 py-4 border-2 border-white text-white font-semibold rounded-lg hover:bg-white hover:text-scorpio-primary transition-all duration-300"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                View Our Portfolio
+              </motion.button>
+            </div>
+          </motion.div>
+        </div>
+      </section>
     </div>
   )
 }

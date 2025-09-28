@@ -2,7 +2,7 @@
 
 import { useState } from 'react'
 import Link from 'next/link'
-import { Menu, X, Globe } from 'lucide-react'
+import { Menu, X } from 'lucide-react'
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -41,12 +41,8 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* Language Switcher & CTA */}
-          <div className="hidden md:flex items-center space-x-4">
-            <button className="flex items-center space-x-1 text-gray-600 hover:text-scorpio-primary transition-colors">
-              <Globe className="w-4 h-4" />
-              <span className="text-sm">EN</span>
-            </button>
+          {/* CTA Button */}
+          <div className="hidden md:flex items-center">
             <Link
               href="/contact"
               className="px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow"
@@ -79,14 +75,10 @@ export default function Header() {
                 </Link>
               ))}
               <div className="pt-4 border-t border-gray-200">
-                <div className="flex items-center justify-between px-3 py-2">
-                  <button className="flex items-center space-x-1 text-gray-600 hover:text-scorpio-primary transition-colors">
-                    <Globe className="w-4 h-4" />
-                    <span className="text-sm">EN</span>
-                  </button>
+                <div className="px-3 py-2">
                   <Link
                     href="/contact"
-                    className="px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                    className="block w-full text-center px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Get Proposal
