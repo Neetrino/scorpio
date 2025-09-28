@@ -43,26 +43,26 @@ export default function Footer() {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center space-x-2 mb-4">
-              <div className="text-2xl font-bold text-scorpio-primary scorpio-text-glow">
+              <div className="text-2xl font-bold text-primary-dark scorpio-text-glow">
                 SCORPIO
               </div>
             </Link>
-            <p className="text-gray-600 mb-6 max-w-sm">
+            <p className="text-secondary-dark mb-6 max-w-sm">
               From Space to Digital Harmony. We create extraordinary digital experiences 
               that launch your brand into the digital universe.
             </p>
             
             {/* Contact Info */}
             <div className="space-y-3">
-              <div className="flex items-center space-x-3 text-gray-600">
+              <div className="flex items-center space-x-3 text-secondary-dark">
                 <Mail className="w-4 h-4" />
                 <span className="text-sm">hello@scorpio.agency</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-600">
+              <div className="flex items-center space-x-3 text-secondary-dark">
                 <Phone className="w-4 h-4" />
                 <span className="text-sm">+1 (555) 123-4567</span>
               </div>
-              <div className="flex items-center space-x-3 text-gray-600">
+              <div className="flex items-center space-x-3 text-secondary-dark">
                 <MapPin className="w-4 h-4" />
                 <span className="text-sm">San Francisco, CA</span>
               </div>
@@ -71,13 +71,13 @@ export default function Footer() {
 
           {/* Company Links */}
           <div>
-            <h3 className="text-scorpio-primary font-semibold mb-4">Company</h3>
+            <h3 className="text-primary-dark font-semibold mb-4">Company</h3>
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-scorpio-primary transition-colors duration-200"
+                    className="text-secondary-dark hover:text-primary-dark transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -88,13 +88,13 @@ export default function Footer() {
 
           {/* Services Links */}
           <div>
-            <h3 className="text-scorpio-primary font-semibold mb-4">Services</h3>
+            <h3 className="text-primary-dark font-semibold mb-4">Services</h3>
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-scorpio-primary transition-colors duration-200"
+                    className="text-secondary-dark hover:text-primary-dark transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -105,13 +105,13 @@ export default function Footer() {
 
           {/* Resources & Newsletter */}
           <div>
-            <h3 className="text-scorpio-primary font-semibold mb-4">Resources</h3>
+            <h3 className="text-primary-dark font-semibold mb-4">Resources</h3>
             <ul className="space-y-3 mb-6">
               {footerLinks.resources.map((link) => (
                 <li key={link.name}>
                   <Link
                     href={link.href}
-                    className="text-gray-600 hover:text-scorpio-primary transition-colors duration-200"
+                    className="text-secondary-dark hover:text-primary-dark transition-colors duration-200"
                   >
                     {link.name}
                   </Link>
@@ -121,8 +121,8 @@ export default function Footer() {
 
             {/* Newsletter */}
             <div>
-              <h4 className="text-scorpio-primary font-semibold mb-3">Newsletter</h4>
-              <p className="text-gray-600 text-sm mb-3">
+              <h4 className="text-primary-dark font-semibold mb-3">Newsletter</h4>
+              <p className="text-secondary-dark text-sm mb-3">
                 Stay updated with our latest insights
               </p>
               <div className="flex">
@@ -131,7 +131,7 @@ export default function Footer() {
                   placeholder="Enter your email"
                   className="flex-1 px-3 py-2 bg-white border border-gray-300 rounded-l-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:border-scorpio-primary"
                 />
-                <button className="px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-r-lg hover:bg-opacity-90 transition-all duration-300">
+                <button className="px-4 py-2 bg-primary-dark text-white font-semibold rounded-r-lg hover:bg-opacity-90 transition-all duration-300">
                   Subscribe
                 </button>
               </div>
@@ -142,7 +142,7 @@ export default function Footer() {
         {/* Bottom Section */}
         <div className="border-t border-gray-200 mt-8 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-600 text-sm">
+            <p className="text-secondary-dark text-sm">
               © {currentYear} Scorpio Creative Agency. All rights reserved.
             </p>
             
@@ -154,7 +154,7 @@ export default function Footer() {
                   <Link
                     key={social.name}
                     href={social.href}
-                    className="text-gray-600 hover:text-scorpio-primary transition-colors duration-200"
+                    className="text-secondary-dark hover:text-primary-dark transition-colors duration-200"
                     aria-label={social.name}
                   >
                     <Icon className="w-5 h-5" />

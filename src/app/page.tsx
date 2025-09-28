@@ -196,7 +196,7 @@ export default function Home() {
           <div className="mb-8">
             <motion.h1 
               ref={titleRef}
-              className="text-6xl md:text-8xl font-bold text-scorpio-primary mb-6 scorpio-text-glow"
+              className="text-6xl md:text-8xl font-bold text-primary-dark mb-6 scorpio-text-glow"
               whileHover={{ 
                 scale: 1.05,
                 textShadow: "0 0 20px #0F172A, 0 0 40px #0F172A, 0 0 60px #0F172A"
@@ -214,7 +214,7 @@ export default function Home() {
               From Space to Digital Harmony
             </motion.div>
             <motion.div 
-              className="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto"
+              className="text-lg md:text-xl text-secondary-dark max-w-2xl mx-auto"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 1, duration: 0.8 }}
@@ -280,7 +280,7 @@ export default function Home() {
             viewport={{ once: true }}
           >
             <motion.h2 
-              className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6"
+              className="text-4xl md:text-5xl font-bold text-primary-dark mb-6"
               whileInView={{ 
                 background: "linear-gradient(45deg, #0F172A, #FF6B35, #0F172A)",
                 backgroundClip: "text",
@@ -293,7 +293,7 @@ export default function Home() {
               Our Mission
             </motion.h2>
             <motion.p 
-              className="text-xl text-gray-600 max-w-3xl mx-auto"
+              className="text-xl text-secondary-dark max-w-3xl mx-auto"
               initial={{ opacity: 0, scale: 0.9 }}
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: 0.2 }}
@@ -327,10 +327,10 @@ export default function Home() {
               >
                 🚀
               </motion.div>
-              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
+              <h3 className="text-xl font-semibold text-primary-dark mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Innovation
               </h3>
-              <p className="text-gray-600 relative z-10">
+              <p className="text-secondary-dark relative z-10">
                 We push boundaries and explore new frontiers in digital design
               </p>
             </motion.div>
@@ -356,10 +356,10 @@ export default function Home() {
               >
                 ✨
               </motion.div>
-              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
+              <h3 className="text-xl font-semibold text-primary-dark mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Creativity
               </h3>
-              <p className="text-gray-600 relative z-10">
+              <p className="text-secondary-dark relative z-10">
                 Every project is a unique journey through the creative cosmos
               </p>
             </motion.div>
@@ -385,10 +385,10 @@ export default function Home() {
               >
                 🌌
               </motion.div>
-              <h3 className="text-xl font-semibold text-scorpio-primary mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
+              <h3 className="text-xl font-semibold text-primary-dark mb-2 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                 Harmony
               </h3>
-              <p className="text-gray-600 relative z-10">
+              <p className="text-secondary-dark relative z-10">
                 We create perfect balance between form, function, and experience
               </p>
             </motion.div>
@@ -406,10 +406,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
               Our Services
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               We offer comprehensive digital solutions to help your business thrive in the digital universe
             </p>
           </motion.div>
@@ -458,10 +458,10 @@ export default function Home() {
               >
                 <div className="absolute inset-0 bg-gradient-to-br from-scorpio-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="text-4xl mb-4 relative z-10">{service.icon}</div>
-                <h3 className="text-xl font-semibold text-scorpio-primary mb-3 relative z-10 group-hover:text-scorpio-secondary transition-colors">
+                <h3 className="text-xl font-semibold text-primary-dark mb-3 relative z-10 group-hover:text-scorpio-secondary transition-colors">
                   {service.title}
                 </h3>
-                <p className="text-gray-600 relative z-10">
+                <p className="text-secondary-dark relative z-10">
                   {service.description}
                 </p>
               </motion.div>
@@ -480,10 +480,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
               Our Impact
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Numbers that speak to our commitment to excellence and client success
             </p>
           </motion.div>
@@ -503,10 +503,10 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 viewport={{ once: true }}
               >
-                <div className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-2">
+                <div className="text-4xl md:text-5xl font-bold text-primary-dark mb-2">
                   {stat.number}
                 </div>
-                <div className="text-gray-600 font-medium">
+                <div className="text-secondary-dark font-medium">
                   {stat.label}
                 </div>
               </motion.div>
@@ -525,10 +525,10 @@ export default function Home() {
             transition={{ duration: 0.8 }}
             viewport={{ once: true }}
           >
-            <h2 className="text-4xl md:text-5xl font-bold text-scorpio-primary mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary-dark mb-6">
               What Our Clients Say
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-secondary-dark max-w-3xl mx-auto">
               Don't just take our word for it - hear from the businesses we've helped transform
             </p>
           </motion.div>
@@ -568,14 +568,14 @@ export default function Home() {
                     <span key={i} className="text-scorpio-secondary text-xl">⭐</span>
                   ))}
                 </div>
-                <p className="text-gray-600 mb-4 italic">
+                <p className="text-secondary-dark mb-4 italic">
                   "{testimonial.content}"
                 </p>
                 <div>
-                  <div className="font-semibold text-scorpio-primary">
+                  <div className="font-semibold text-primary-dark">
                     {testimonial.name}
                   </div>
-                  <div className="text-sm text-gray-500">
+                  <div className="text-sm text-muted-dark">
                     {testimonial.company}
                   </div>
                 </div>

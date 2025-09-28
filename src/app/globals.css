@@ -72,11 +72,11 @@ body {
 }
 
 .scorpio-glow {
-  box-shadow: 0 0 20px rgba(0, 212, 255, 0.2);
+  box-shadow: 0 0 20px rgba(15, 23, 42, 0.2);
 }
 
 .scorpio-text-glow {
-  text-shadow: 0 0 10px rgba(0, 212, 255, 0.3);
+  text-shadow: 0 0 10px rgba(15, 23, 42, 0.3);
 }
 
 /* Light theme specific styles */
@@ -96,4 +96,17 @@ body {
 
 .scorpio-secondary {
   color: #FF6B35;
+}
+
+/* Enhanced text contrast for light theme */
+.text-primary-dark {
+  color: #0F172A !important;
+}
+
+.text-secondary-dark {
+  color: #1E293B !important;
+}
+
+.text-muted-dark {
+  color: #475569 !important;
 }

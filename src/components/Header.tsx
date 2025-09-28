@@ -23,7 +23,7 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center space-x-2">
-            <div className="text-2xl font-bold text-scorpio-primary scorpio-text-glow">
+            <div className="text-2xl font-bold text-primary-dark scorpio-text-glow">
               SCORPIO
             </div>
           </Link>
@@ -34,7 +34,7 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.href}
-                className="text-gray-600 hover:text-scorpio-primary transition-colors duration-200 font-medium"
+                className="text-secondary-dark hover:text-primary-dark transition-colors duration-200 font-medium"
               >
                 {item.name}
               </Link>
@@ -45,7 +45,7 @@ export default function Header() {
           <div className="hidden md:flex items-center">
             <Link
               href="/contact"
-              className="px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow"
+              className="px-4 py-2 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300 scorpio-glow"
             >
               Get Proposal
             </Link>
@@ -54,7 +54,7 @@ export default function Header() {
           {/* Mobile menu button */}
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="md:hidden text-gray-600 hover:text-scorpio-primary transition-colors"
+            className="md:hidden text-secondary-dark hover:text-primary-dark transition-colors"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
@@ -68,7 +68,7 @@ export default function Header() {
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-3 py-2 text-gray-600 hover:text-scorpio-primary hover:bg-gray-50 rounded-md transition-colors duration-200"
+                  className="block px-3 py-2 text-secondary-dark hover:text-primary-dark hover:bg-gray-50 rounded-md transition-colors duration-200"
                   onClick={() => setIsMenuOpen(false)}
                 >
                   {item.name}
@@ -78,7 +78,7 @@ export default function Header() {
                 <div className="px-3 py-2">
                   <Link
                     href="/contact"
-                    className="block w-full text-center px-4 py-2 bg-scorpio-primary text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
+                    className="block w-full text-center px-4 py-2 bg-primary-dark text-white font-semibold rounded-lg hover:bg-opacity-90 transition-all duration-300"
                     onClick={() => setIsMenuOpen(false)}
                   >
                     Get Proposal
